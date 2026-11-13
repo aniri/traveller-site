@@ -3113,6 +3113,33 @@ input#nav-toggle:checked ~ #nav-menu {
 .share-buttons .is-copied .copied {
   display: block;
 }
+.cookie-box {
+  position: fixed;
+  left: 1rem;
+  bottom: 1rem;
+  z-index: 9999;
+  width: 24rem;
+  max-width: calc(100% - 2rem);
+  padding: 1.25rem;
+  border-radius: 0.5rem;
+  background: #fff;
+  font-size: 0.9rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+.cookie-box[hidden] {
+  display: none;
+}
+.cookie-box-text p {
+  margin: 0;
+}
+.cookie-box-buttons {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+.dark .cookie-box {
+  background: #222;
+}
 .leaflet-popup-content a {
   color: inherit;
 }
